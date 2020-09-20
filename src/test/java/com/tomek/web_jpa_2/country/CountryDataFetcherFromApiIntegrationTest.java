@@ -21,7 +21,7 @@ public class CountryDataFetcherFromApiIntegrationTest {
 	@Test
 	public void givenUrl_fetchesData() throws Exception {
 		String countryJson = countryDataFetcher.getCountryData("https://restcountries.eu/rest/v2/all");
-
+		System.out.println(countryJson);
 		Assertions.assertNotNull(countryJson);
 	}
 	@Disabled

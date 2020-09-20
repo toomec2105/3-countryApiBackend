@@ -2,6 +2,7 @@ package com.tomek.web_jpa_2.country;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.skyscreamer.jsonassert.JSONAssert;
 
 class CountryDataFetcherFromApiUnitTest {
 
@@ -35,6 +36,8 @@ class CountryDataFetcherFromApiUnitTest {
 
 		Assertions.assertNotNull(countryJson);
 		org.assertj.core.api.Assertions.assertThat(countryJson.length()).isGreaterThan(200000);
+		//JSONAssert.assertEquals(expected, actual, strict);
+		
 		}
 	
 }

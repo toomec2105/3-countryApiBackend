@@ -18,7 +18,6 @@ public class UserDataLoader implements CommandLineRunner {
 	@Autowired
 	private UserRepository userRepository;
 
-	
 	@Override
 	public void run(String... args) throws Exception {
 		logger.info("----------------------> Saving darek user"); 
